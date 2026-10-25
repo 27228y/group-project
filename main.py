@@ -25,7 +25,7 @@ def calculator():
 
     choice = input("Enter your choice (1/2/3/4): ")
 
-# вот тут короче вот так вот пишем и четко ровно
+    # Validate input choice and perform calculation
     if choice in ("1", "2", "3", "4"):
         try:
             num1 = float(input("Enter the first number: "))
