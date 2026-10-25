@@ -24,6 +24,7 @@ def calculator():
     print("4. Division")
 
     choice = input("Enter your choice (1/2/3/4): ")
+
 /// вот тут короче вот так вот пишем и четко ровно
     if choice in ("1", "2", "3", "4"):
         try:
