@@ -3,7 +3,7 @@ def add(x, y):
 
 
 def subtract(x, y):
-    return x + y  # ОШИБКА №1 (логическая): здесь +, а должно быть -
+    return x - y  # Fixed logic error
 
 
 def multiply(x, y):
@@ -25,7 +25,7 @@ def calculator():
 
     choice = input("Enter your choice (1/2/3/4): ")
 
-/// вот тут короче вот так вот пишем и четко ровно
+# вот тут короче вот так вот пишем и четко ровно
     if choice in ("1", "2", "3", "4"):
         try:
             num1 = float(input("Enter the first number: "))
@@ -37,8 +37,8 @@ def calculator():
         if choice == "1":
             print(f"Result: {add(num1, num2)}")
         elif choice == "2":
-            # ОШИБКА №2 (NameError): написали nums1 вместо num1
-            print(f"Result: {subtract(nums1, num2)}")
+            # Fixed NameError
+            print(f"Result: {subtract(num1, num2)}")
         elif choice == "3":
             print(f"Result: {multiply(num1, num2)}")
         elif choice == "4":
